@@ -1,9 +1,10 @@
 import './App.css';
+import FoodReviews from './components/FoodReviews';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Livy's Redux App</header>
+      <FoodReviews />
     </div>
   );
 }
