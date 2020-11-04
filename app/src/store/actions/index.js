@@ -11,7 +11,6 @@ export const fetchReviews = () => {
         axios
             .get('https://thereportoftheweek-api.herokuapp.com/reports?between=2018-1-1%7C2019-1-1')
             .then((res) => {
-                // console.log(res.data)
                 dispatch({  type: FETCH_REVIEWS_SUCCESS, payload: res.data })
             })
             .catch((err) => {
