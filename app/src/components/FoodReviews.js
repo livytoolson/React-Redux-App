@@ -13,11 +13,11 @@ const FoodReviews = (props) => {
 
     return (
         <div>
-            <div className="review-header">
-                <h1>Food Reviews</h1>
+            <div className="review-title">
+                <h1>Fast Food Reviews</h1>
             </div>
-            {props.isLoading ? <p>Loading food reviews ...</p> : null}
-            {props.error ? <p style={{ color: "red " }}>{props.errpr}</p> : null}
+            {props.isLoading ? <p className="loading">Loading food reviews ...</p> : null}
+            {props.error ? <p className="error" style={{ color: "red " }}>{props.error}</p> : null}
             <div className="review-wrapper">
                 {props.reviews.map((review) => (
                 <div className="review-content">
