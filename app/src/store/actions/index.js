@@ -14,8 +14,7 @@ export const fetchReviews = () => {
                 dispatch({  type: FETCH_REVIEWS_SUCCESS, payload: res.data })
             })
             .catch((err) => {
-                console.log(err)
-                // dispatch({ type: FETCH_REVIEWS_FAILURE, payload: })
+                dispatch({ type: FETCH_REVIEWS_FAILURE, payload: err.message })
             })
     }
 }
